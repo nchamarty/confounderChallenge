@@ -416,7 +416,7 @@ x_max = patients_df['severity'].max()
 x_min = patients_df['severity'].min()
 x_range = x_max - x_min
 # Position annotations just outside the plot border
-annotation_x = x_max + x_range * 0.08  # 8% of range beyond max
+annotation_x = x_max + x_range * 0.15  # 15% of range beyond max
 
 # Add text annotations with shape symbols (positioned outside plot border)
 ax.text(annotation_x, mean_dreamy, 
@@ -436,7 +436,7 @@ ax.set_title('Post-Surgical Symptom Score by Patient Severity',
              fontsize=14, fontweight='bold', pad=15)
 
 # Adjust x-axis limits to accommodate annotations
-ax.set_xlim(x_min - x_range * 0.02, annotation_x + x_range * 0.08)
+ax.set_xlim(x_min - x_range * 0.02, annotation_x + x_range * 0.15)
 
 # Add grid
 ax.grid(True, alpha=0.3, linestyle='-', linewidth=0.5, zorder=1)
