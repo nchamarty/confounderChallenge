@@ -25,12 +25,14 @@ Counterintuitively, the surgeon who doesn't "look the part" may actually be the 
 
 ## Observational Data: A Misleading Victory for Doc Dreamy
 
+Let’s use data to figure out which surgeon performs better. 
+
 ```{python}
 #| label: simulate-data
 #| echo: false
 #| message: false
 #| warning: false
-#| include: false
+#| include: true
 
 import pandas as pd
 import numpy as np
@@ -82,7 +84,7 @@ patients_df.head()
 #| echo: true
 #| message: false
 #| warning: false
-#| include: false
+#| include: true
 
 import pandas as pd
 
@@ -103,7 +105,7 @@ patients_df.head()
 #| echo: true
 #| message: false
 #| warning: false
-#| include: false
+#| include: true
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -224,7 +226,7 @@ Since we cannot rerun history with randomization, we run an experiment to collec
 #| echo: false
 #| message: false
 #| warning: false
-#| include: false
+#| include: true
 
 import pandas as pd
 import numpy as np
@@ -269,10 +271,10 @@ patients_randomized_df.head()
 
 ```{python}
 #| label: load-data-randomized-python
-#| echo: false
+#| echo: true
 #| message: false
 #| warning: false
-#| include: false
+#| include: true
 
 import pandas as pd
 
@@ -292,7 +294,7 @@ patients_randomized_df.head()
 #| echo: true
 #| message: false
 #| warning: false
-#| include: false
+#| include: true
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -377,7 +379,7 @@ The key to handling a common cause confounder is to stratify by the common cause
 #| echo: true
 #| message: false
 #| warning: false
-#| include: false
+#| include: true
 
 import matplotlib.pyplot as plt
 import numpy as np
